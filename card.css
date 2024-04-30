@@ -6,7 +6,7 @@
 
 .ca{
     position: relative;
-    /* border-radius: 30px; */
+    border-radius: 30px;
     width:250px;
     align-items: center;
     /* min-width: 250px; */
@@ -35,11 +35,14 @@
     text-align: center;
 }
 .ca .img img{
+    width:100%;
     transform: scale(1);
     transition: 0.5s;
     display: none;
 }
-
+.img input:checked ~ img{
+    display: block;
+}
 .ca .img::before{
     position: absolute;
     width:200px;
@@ -66,7 +69,7 @@
     filter:blur(10px);
     transition: 0.5s;
 }
-/* .img input{
+.img input{
     position: absolute;
     opacity: 0;
 }
@@ -86,7 +89,7 @@
     height:40px;
     border-radius: 50%;
     cursor: pointer;
-} */
+}
 .mores{
     padding:25px;
 }
@@ -151,13 +154,13 @@
     border-bottom-right-radius: 55%;
 }
 /* animation */
-/* .ca:hover .img img{
+.ca:hover .img img{
     transform: scale(1.2) translate(10px, -20px);
 }
 .ca:hover .img::after{
     width:90%;
 
-} */
+}
 .ca:hover .addCard i,
 .ca:hover .addCard::before,
 .ca:hover .addCard::after{

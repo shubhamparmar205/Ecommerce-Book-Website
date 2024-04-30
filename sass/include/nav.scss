@@ -1,0 +1,115 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+nav {
+    display: flex;
+    overflow: hidden;
+    background-color: #212529;
+	
+}
+
+// nav::before {
+//     content: " ";
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0.5;
+// }
+
+#logo {
+    margin-left: 0;
+    display: flex;
+    margin-right: 100px;
+}
+
+#logo .img-1 {
+    height: auto;
+    width: 85px;
+    max-height: 150px;
+}
+
+.img-1 {
+    height: auto;
+    width: 85px;
+    max-height: 150px;
+}
+
+#logo .img-2 {
+    height:75px;
+    width: 212px;
+    margin-top: 9px;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 10px;
+	justify-content: center;
+    // flex-direction: column;
+}
+
+nav ul li {
+    font-size: 25px;
+    letter-spacing: 2px;
+    list-style: none;
+    // margin-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    // text-decoration-color: white;
+    font-family: 'calibri';
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(55, 53, 53);
+    text-decoration: none;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: 80%;
+    border-radius: 2px;
+    position: absolute;
+    background: white;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 60%;
+    transform: translateX(50%);
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        margin: 0 10px;
+    }
+}
