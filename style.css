@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* SASS Templates*/
+/* global classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template*/
+.color-primary {
+  color: #003859;
+}
+
+.bg-color {
+  background-color: #212529;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-second {
+  color: #adb5bd;
+}
+
+.color-second-bg {
+  background: #adb5bd;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+.color-link {
+  color: #3366cc;
+}
+
+.color-link-bg {
+  background: #3366cc;
+}
+
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span, #top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/* Special-Price Section Template*/
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+nav {
+  display: flex;
+  overflow: hidden;
+  background-color: #212529;
+}
+
+#logo {
+  margin-left: 0;
+  display: flex;
+  margin-right: 100px;
+}
+
+#logo .img-1 {
+  height: auto;
+  width: 85px;
+  max-height: 150px;
+}
+
+.img-1 {
+  height: auto;
+  width: 85px;
+  max-height: 150px;
+}
+
+#logo .img-2 {
+  height: 50px;
+  width: 150px;
+  margin-top: 9px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+nav ul li {
+  font-size: 25px;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "calibri";
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(55, 53, 53);
+  text-decoration: none;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  top: 80%;
+  border-radius: 2px;
+  position: absolute;
+  background: white;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
+  transform: translateX(50%);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #logo {
+    margin-top: 10px;
+  }
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    margin: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
